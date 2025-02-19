@@ -1,14 +1,6 @@
 # main links
 main:
-  # - title: "Join Telegram"
-  #   url: /t.me/prashantdangiblogs/
-  - title: "VEX"
-    url: /vex/
-  - title: "Jobs"
-    url: /jobs/
-  # - title: "Hackathons"
-  #   url: /hackathons/
-  - title: "Blogs by Categories"
+  - title: "Categories"
     url: /blogsbycategories/
   - title: "Archive"
     url: /archive/  
