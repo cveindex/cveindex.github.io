@@ -1,0 +1,26 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+<h1 class="archive__subtitle"><a href="https://t.me/prashantdangiblogs" target="_blank">🚀 Join Telegram 🚀</a></h1>
+
+<!-- <script async src="https://cse.google.com/cse.js?cx=d01aacfce5d894f62">
+</script> -->
+<!-- <div class="gcse-search"></div> -->
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% for post in posts %}
+    {% include archive-single.html type=entries_layout %}
+  {% endfor %}
+</div>
+
+{% include paginator.html %}
