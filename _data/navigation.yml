@@ -1,10 +1,10 @@
 # main links
 main:
-  - title: "Categories"
+  - title: "Vulnerabilities"
     url: /blogsbycategories/
-  - title: "Archive"
+  - title: "Year"
     url: /archive/  
-  - title: "About"
+  - title: "FAQ"
     url: /about/
 
   

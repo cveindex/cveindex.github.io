@@ -1,5 +1,5 @@
 ---
-title: "Archive"
+title: "Year"
 permalink: /archive/
 layout: posts
 author_profile: true

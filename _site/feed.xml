@@ -1,0 +1,1137 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-19T10:17:26+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">CVE Index</title><subtitle>Indexing CVE&apos;s</subtitle><entry><title type="html">CVE-2025-22689</title><link href="http://localhost:4000/cve/CVE-2025-22689/" rel="alternate" type="text/html" title="CVE-2025-22689" /><published>2025-02-18T00:00:00+05:30</published><updated>2025-02-18T00:00:00+05:30</updated><id>http://localhost:4000/cve/CVE-2025-22689</id><content type="html" xml:base="http://localhost:4000/cve/CVE-2025-22689/"><![CDATA[<h1 id="wordpress-forex-calculators-plugin-vulnerability-cve-2025-22689-analysis">WordPress Forex Calculators Plugin Vulnerability (CVE-2025-22689) Analysis</h1>
+
+<h2 id="overview">Overview</h2>
+<p>A critical security vulnerability has been discovered in the WordPress Forex Calculators plugin (versions 1.3.6 and below). This vulnerability, classified as a Cross-Site Scripting (XSS) issue, poses significant risks to websites using the affected versions.</p>
+
+<h2 id="vulnerability-details">Vulnerability Details</h2>
+<ul>
+  <li><strong>CVE ID</strong>: CVE-2025-22689</li>
+  <li><strong>Affected Versions</strong>: All versions up to and including 1.3.6</li>
+  <li><strong>Vulnerability Type</strong>: Stored Cross-Site Scripting (XSS)</li>
+  <li><strong>CVSS Score</strong>: 6.5 (Medium Severity)</li>
+  <li><strong>Discovered by</strong>: Abdi Pranata (Patchstack Alliance)</li>
+</ul>
+
+<h2 id="technical-analysis">Technical Analysis</h2>
+
+<p>The vulnerability is characterized by:</p>
+<ul>
+  <li>CWE-79: Improper Neutralization of Input During Web Page Generation</li>
+  <li>Attack Vector: Network-based</li>
+  <li>Attack Complexity: Low</li>
+  <li>Privileges Required: Low</li>
+  <li>User Interaction: Required</li>
+  <li>Scope: Changed</li>
+  <li>Impact: Low across Confidentiality, Integrity, and Availability</li>
+</ul>
+
+<h2 id="cvss-vector">CVSS Vector</h2>
+
+<h2 id="risk-assessment">Risk Assessment</h2>
+<p>The vulnerability allows for Stored XSS attacks, which means malicious scripts can be permanently stored on the target servers and executed when other users access the affected pages. This presents several risks:</p>
+<ul>
+  <li>Potential theft of user session data</li>
+  <li>Unauthorized actions performed on behalf of other users</li>
+  <li>Modification of website content</li>
+  <li>Possible redirection to malicious websites</li>
+</ul>
+
+<h2 id="impact">Impact</h2>
+<p>The vulnerability affects multiple security aspects:</p>
+<ul>
+  <li>Confidentiality: Low Impact</li>
+  <li>Integrity: Low Impact</li>
+  <li>Availability: Low Impact</li>
+</ul>
+
+<p>While individual impacts are rated as “Low,” the combined effect and the “Changed” scope make this a significant security concern that requires immediate attention.</p>
+
+<h2 id="mitigation">Mitigation</h2>
+
+<h3 id="immediate-action-required">Immediate Action Required</h3>
+<p>Update the WordPress Forex Calculators plugin to version 1.3.7 or later. This version contains the necessary security patches to address the vulnerability.</p>
+
+<h3 id="additional-security-recommendations">Additional Security Recommendations</h3>
+<ol>
+  <li>Regularly update all WordPress plugins</li>
+  <li>Implement strong content security policies</li>
+  <li>Monitor for suspicious activities</li>
+  <li>Maintain regular backups of your website</li>
+</ol>
+
+<h2 id="timeline">Timeline</h2>
+<ul>
+  <li><strong>Reserved</strong>: January 7, 2025</li>
+  <li><strong>Published</strong>: February 16, 2025</li>
+  <li><strong>Last Updated</strong>: February 18, 2025</li>
+</ul>
+
+<h2 id="references">References</h2>
+<p>For more detailed information, visit the <a href="https://patchstack.com/database/wordpress/plugin/fx-calculators/vulnerability/wordpress-forex-calculators-plugin-1-3-6-cross-site-scripting-xss-vulnerability?_s_id=cve">Patchstack vulnerability database entry</a>.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>While this vulnerability is rated as medium severity, the potential for stored XSS attacks makes it a significant concern for WordPress site administrators. Immediate updates are recommended to ensure site security. Continue monitoring official channels for any additional security advisories related to this plugin.</p>]]></content><author><name></name></author><category term="CVE" /><summary type="html"><![CDATA[WordPress Forex Calculators plugin <= 1.3.6 - Cross Site Scripting (XSS) vulnerability]]></summary></entry><entry><title type="html">FastCMS Template Menu menu cross site scripting</title><link href="http://localhost:4000/cve/xss/fastcms-xss/" rel="alternate" type="text/html" title="FastCMS Template Menu menu cross site scripting" /><published>2025-02-16T00:00:00+05:30</published><updated>2025-02-16T00:00:00+05:30</updated><id>http://localhost:4000/cve/xss/fastcms-xss</id><content type="html" xml:base="http://localhost:4000/cve/xss/fastcms-xss/"><![CDATA[<h1 id="overview">Overview</h1>
+<h2 id="fastcms-015-template-menu-menu-cross-site-scripting">FastCMS (&gt;=0.1.5) Template Menu menu cross site scripting</h2>
+
+<p>A vulnerability was found in <strong>FastCMS up to 0.1.5</strong> and classified as <strong>problematic</strong>. This issue affects some unknown processing of the file <code class="language-plaintext highlighter-rouge">/fastcms.html#/template/menu</code> of the component Template Menu. The manipulation leads to cross site scripting. The identification of this vulnerability is <strong>CVE-2025-1332</strong>. The attack may be initiated remotely. Furthermore, there is an exploit available. This product does not use versioning. This is why information about affected and unaffected releases are unavailable.</p>
+
+<p><strong>FastCMS Website</strong></p>
+
+<p><del>fastcms.dev</del><br />
+<del>fastcms.net</del><br />
+<a href="https://www.xjd2020.com/" target="_blank">https://www.xjd2020.com/</a></p>
+
+<p><strong>FastCMS Repository</strong></p>
+
+<p><del>https://github.com/fastcms/webpack-config</del><br />
+<a href="https://gitee.com/dianbuapp_admin/fastcms" target="_blank">https://gitee.com/dianbuapp_admin/fastcms</a></p>
+
+<h1 id="details">Details</h1>
+
+<h2 id="cve-2025-1332">CVE-2025-1332</h2>
+
+<p>There is a storage type XSS in the FastCMS background template menu location. The manipulation with an unknown input leads to a cross site scripting vulnerability. The product incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users. As an impact it is known to affect <strong>integrity</strong>. The vulnerability is named CVE-2025-1332.</p>
+
+<p><img src="/assets/images/gitee1.png" alt="1" /></p>
+
+<p>the homepage is automatically triggered</p>
+
+<p><img src="/assets/images/gitee2.png" alt="2" /></p>
+
+<p>After construction, you can get the token</p>
+
+<p><img src="/assets/images/Gitee3.png" alt="3" /></p>
+
+<p>The attack can be initiated remotely. Additional levels of successful authentication are required for exploitation. Successful exploitation requires user interaction by the victim. Technical details and also a public exploit are known. This vulnerability is assigned to <a href="https://attack.mitre.org/techniques/T1059/007/" target="_blank">T1059.007</a> by the MITRE ATT&amp;CK project.</p>
+
+<p>Source: <a href="https://gitee.com/xjd2020/fastcms/issues/IBKJ1W" target="_blank">Gitee</a>, <a href="https://vuldb.com/?id.295942" target="_blank">Vuldb</a></p>]]></content><author><name></name></author><category term="CVE" /><category term="XSS" /><summary type="html"><![CDATA[XSS in FastCMS - CVE-2025-1332]]></summary></entry><entry><title type="html">Apple iPhone SE 4 Announcement Expected February 19, 2025</title><link href="http://localhost:4000/apple-se-4/" rel="alternate" type="text/html" title="Apple iPhone SE 4 Announcement Expected February 19, 2025" /><published>2025-02-13T00:00:00+05:30</published><updated>2025-02-13T00:00:00+05:30</updated><id>http://localhost:4000/apple-se-4</id><content type="html" xml:base="http://localhost:4000/apple-se-4/"><![CDATA[<p>Apple is expected to introduce the latest iteration of its iPhone SE lineup on February 19, 2025, marking the first update to the series since 2022.</p>
+
+<h2 id="official-announcement">Official Announcement</h2>
+
+<p>The news comes following a cryptic post by Apple CEO Tim Cook on X (formerly Twitter), featuring an Apple logo rendered in a distinctive liquid metal finish. While the teaser could potentially reference other product lines, multiple industry indicators strongly suggest this announcement pertains to the iPhone SE 4.</p>
+
+<h2 id="expected-timeline">Expected Timeline</h2>
+
+<h3 id="announcement---february-19">Announcement - February 19</h3>
+<ul>
+  <li>Digital announcement expected via Apple Newsroom</li>
+  <li>Anticipated timing: 10:00 AM PT / 1:00 PM ET / 6:00 PM GMT</li>
+  <li>No physical event planned</li>
+</ul>
+
+<h3 id="key-dates">Key Dates</h3>
+<ul>
+  <li><strong>Pre-orders</strong>: Expected to begin Friday, February 21</li>
+  <li><strong>Media Reviews</strong>: Anticipated February 26-27</li>
+  <li><strong>Public Release</strong>: Projected for Friday, February 28</li>
+</ul>
+
+<h2 id="what-to-expect">What to Expect</h2>
+
+<p>The announcement will likely reveal:</p>
+<ul>
+  <li>Official product design</li>
+  <li>Model specifications</li>
+  <li>Pricing structure</li>
+  <li>Market availability</li>
+</ul>
+
+<p>This article will be updated with additional information as it becomes available.</p>
+
+<hr />
+
+<p><strong>Source</strong>: <a href="https://x.com/tim_cook/status/1890068457825394918" target="_blank">Tim Cook on X</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Apple hints at new device launch through social media announcement]]></summary></entry><entry><title type="html">Jetson Orin Nano Super Developer Kit</title><link href="http://localhost:4000/ai/llm/jetson-nano-super/" rel="alternate" type="text/html" title="Jetson Orin Nano Super Developer Kit" /><published>2025-01-23T00:00:00+05:30</published><updated>2025-01-23T00:00:00+05:30</updated><id>http://localhost:4000/ai/llm/jetson-nano-super</id><content type="html" xml:base="http://localhost:4000/ai/llm/jetson-nano-super/"><![CDATA[<h1 id="nvidias-developer-kit--jetson-orin-nano-super">NVIDIA’s Developer Kit : Jetson Orin Nano Super</h1>
+
+<p>NVIDIA Jetson Orin Nano Super Development Kit is a very powerful AI development kit. For running AI models locally on the device.
+It provides 67 trillion operations per second(TOPS) of AI performance.</p>
+
+<ul>
+  <li>
+    <p>Powerful computer redifines generative AI of for small edge devices</p>
+  </li>
+  <li>
+    <p>To run most popular AI Models:</p>
+    <blockquote>
+      <p>Vision Transformers<br />
+Large Language Models(LLM)<br />
+Vision Language Models(VLM)\</p>
+    </blockquote>
+  </li>
+</ul>
+
+<h1 id="edge-in-cybersecurity-by-jetson-nano-development-kit">Edge in Cybersecurity by Jetson Nano Development kit</h1>
+
+<ul>
+  <li>Enhance Threat detection with AI</li>
+  <li>Boosted Security operational efficiency with Generative AI</li>
+  <li>Protected sensitive Data and itellectual property with secure infrastructure</li>
+  <li>Combined Robust Ai frameworks, architecture and best practises to create zero trust and scalable AI Data centers</li>
+  <li>And Enhance cybersecurity in face of heightened security threats.</li>
+</ul>
+
+<h2 id="softwares-to-use">Softwares to use:</h2>
+
+<ul>
+  <li>Nvidia Morpheus</li>
+  <li>Nvidia NIM models</li>
+</ul>
+
+<h1 id="specifications">Specifications:</h1>
+
+<ul>
+  <li>67 INT8 TOPS</li>
+  <li><strong>GPU</strong>: NVIDIA Ampere architecture with 1024 CUDA cores and 32 tensor cores</li>
+  <li><strong>CPU</strong>: 6-core Arm® Cortex®-A78AE v8.2 64-bit CPU 1.5MB L2 + 4MB L3</li>
+  <li><strong>Memory</strong>: 8GB 128-bit LPDDR5 102 GB/s</li>
+  <li><strong>Storage</strong>: Supports SD card slot and external NVMe</li>
+  <li><strong>Power</strong>: 7W–25W</li>
+</ul>
+
+<h1 id="operating-system-and-software-jetson-sdk">Operating System and Software (Jetson SDK)</h1>
+
+<h2 id="jetson-linux">Jetson Linux:</h2>
+
+<p>A Board Support Package (BSP) with bootloader, Linux kernel, Ubuntu desktop environment, NVIDIA drivers, toolchain and more. It also includes security and Over-The-Air (OTA) features.</p>
+
+<h2 id="jetson-ai-stack">Jetson AI Stack:</h2>
+
+<p>CUDA Accelerated AI stack which includes a complete set of libraries for acceleration of GPU computing, multimedia, graphics, and computer vision. It supports application frameworks such as Metropolis to build, deploy and scale Vision AI application, Isaac for building high performance robotic applications and Holoscan for building high performance computing applications (HPC) with real time insights and sensor processing capabilities from edge to cloud.</p>
+
+<h2 id="jetson-platform-services">Jetson Platform Services:</h2>
+
+<p>A collection of ready to use services to accelerate AI application development on Jetson.</p>
+
+<p><a href="https://tannatechbiz.com/nvidia-jetson-orin-nano-developer-kit.html">To buy</a></p>
+
+<p><a href="https://developer.nvidia.com/embedded/jetpack">Get SDK (with Jetpack 6.2)</a></p>
+
+<p><a href="https://developer.nvidia.com/embedded/learn/get-started-jetson-orin-nano-devkit">Jetson Orin Jano Developer Kit Starter guide</a></p>
+
+<p><a href="https://www.nvidia.com/en-in/solutions/ai/cybersecurity/?ncid=em-even-800877">AI and Cybersecurity</a></p>]]></content><author><name></name></author><category term="AI" /><category term="LLM" /><summary type="html"><![CDATA[NVIDIA Generative AI Computer accelerating the entire workflow]]></summary></entry><entry><title type="html">NVIDIA Inference Microservices(NIM)</title><link href="http://localhost:4000/ai/llm/nvidia-inference-microservices/" rel="alternate" type="text/html" title="NVIDIA Inference Microservices(NIM)" /><published>2025-01-23T00:00:00+05:30</published><updated>2025-01-23T00:00:00+05:30</updated><id>http://localhost:4000/ai/llm/nvidia-inference-microservices</id><content type="html" xml:base="http://localhost:4000/ai/llm/nvidia-inference-microservices/"><![CDATA[<h1 id="nvidia-inference-microservicesnim">NVIDIA Inference Microservices(NIM)</h1>
+
+<p>There are 170+ of models by NVIDIA. You can find them here: <a href="https://build.nvidia.com/models">NVIDIA Models</a></p>
+
+<h2 id="key-features-of-nvidia-inference-microservices">Key Features of NVIDIA Inference Microservices</h2>
+
+<ol>
+  <li><strong>Production-Ready Deployment</strong>
+    <ul>
+      <li>Pre-configured containers with optimized runtime environments</li>
+      <li>Automated scaling and load balancing</li>
+      <li>Built-in monitoring and logging capabilities</li>
+      <li>Enterprise-grade security features</li>
+    </ul>
+  </li>
+  <li><strong>Hardware Optimization</strong>
+    <ul>
+      <li>Specifically tuned for NVIDIA GPUs</li>
+      <li>Supports multiple GPU architectures (Ampere, Hopper, Ada Lovelace)</li>
+      <li>Efficient resource utilization</li>
+      <li>Dynamic batch processing</li>
+    </ul>
+  </li>
+</ol>
+
+<p>This blog explains using two NIM models by Nvidia:</p>
+
+<ul>
+  <li>
+    <p>meta/llama3-70b-instruct, and</p>
+  </li>
+  <li>
+    <p>nvidia/nv-embedqa-e5-v5</p>
+  </li>
+</ul>
+
+<h2 id="metallama3-70b-instruct">meta/llama3-70b-instruct</h2>
+
+<p><img src="/assets/images/llama3-70b-instruct.png" alt="llama3-70b-instruct" /></p>
+
+<p>This model is a large language model developed by Meta. The model is designed to be a general-purpose language model that can be used for a wide range of natural language processing tasks, including language translation, text generation, and question answering.</p>
+
+<p>The model is available on the Hugging Face platform and can be used with the Hugging Face Transformers library. It is also available on the NVIDIA Inference Microservices platform, which provides a cloud-based infrastructure for running inference on NVIDIA GPUs.</p>
+
+<h3 id="ways-to-use-this-modelusing-the-nim">Ways to use this model(using the NIM):</h3>
+
+<ul>
+  <li>
+    <p>Hosted API: Using NVIDIA Inference Microservices(NIM) with Nvidia’s infrastructure access the model. (But in this you can only use 1000 api calls per month)</p>
+  </li>
+  <li>
+    <p>Self-hosted API: Using NVIDIA Inference Microservices(NIM) with your own infrastructure access the model. And in this case you can use infinite api calls to use the model.</p>
+  </li>
+</ul>
+
+<p><img src="/assets/images/llama3-70b-instruct-api.png" alt="api" /></p>
+
+<h2 id="nvidianv-embedqa-e5-v5">nvidia/nv-embedqa-e5-v5</h2>
+
+<p><img src="/assets/images/nv-embedqa-e5-v5.png" alt="nv-embedqa-e5-v5" /></p>
+
+<p>The NVIDIA Retrieval QA E5 Embedding Model is an embedding model optimized for text question-answering retrieval.</p>
+
+<h3 id="ways-to-use-this-modelusing-the-nim-1">Ways to use this model(using the NIM):</h3>
+
+<p><strong>Same as previous model.</strong></p>
+
+<h2 id="popular-model-categories">Popular Model Categories</h2>
+
+<h3 id="1-large-language-models-llms">1. Large Language Models (LLMs)</h3>
+
+<p>NVIDIA offers several state-of-the-art LLMs optimized for different use cases:</p>
+
+<h4 id="llama-2">Llama 2</h4>
+<ul>
+  <li><strong>Variants</strong>: 7B, 13B, and 70B parameters</li>
+  <li><strong>Use Cases</strong>: Text generation, summarization, translation</li>
+  <li><strong>Features</strong>:
+    <ul>
+      <li>Open-source architecture</li>
+      <li>Fine-tuning capabilities</li>
+      <li>Optimized for enterprise deployment</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="mistral">Mistral</h4>
+<ul>
+  <li><strong>Variants</strong>: 7B base and instruct models</li>
+  <li><strong>Key Strengths</strong>:
+    <ul>
+      <li>Exceptional performance despite smaller size</li>
+      <li>Enhanced context handling</li>
+      <li>Efficient inference speed</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="gpt-3-compatible-models">GPT-3 Compatible Models</h4>
+<ul>
+  <li>Multiple parameter sizes available</li>
+  <li>Optimized for enterprise applications</li>
+  <li>Support for custom fine-tuning</li>
+</ul>
+
+<h3 id="2-computer-vision-models">2. Computer Vision Models</h3>
+
+<h4 id="detection-models">Detection Models</h4>
+<ul>
+  <li><strong>YOLO Family</strong>:
+    <ul>
+      <li>YOLOv8</li>
+      <li>YOLOv5</li>
+      <li>Features real-time object detection</li>
+      <li>Multiple backbone options</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="classification-models">Classification Models</h4>
+<ul>
+  <li><strong>ResNet Family</strong>:
+    <ul>
+      <li>ResNet50</li>
+      <li>ResNet101</li>
+      <li>ResNet152</li>
+    </ul>
+  </li>
+  <li><strong>EfficientNet Series</strong></li>
+  <li><strong>Vision Transformers (ViT)</strong></li>
+</ul>
+
+<h4 id="segmentation-models">Segmentation Models</h4>
+<ul>
+  <li>Mask R-CNN</li>
+  <li>DeepLab v3</li>
+  <li>Segment Anything Model (SAM)</li>
+</ul>
+
+<h3 id="3-speech-ai-models">3. Speech AI Models</h3>
+
+<h4 id="speech-recognition">Speech Recognition</h4>
+<ul>
+  <li><strong>Riva ASR</strong>:
+    <ul>
+      <li>Support for 50+ languages</li>
+      <li>Real-time transcription</li>
+      <li>Custom vocabulary support</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="text-to-speech">Text-to-Speech</h4>
+<ul>
+  <li><strong>Riva TTS</strong>:
+    <ul>
+      <li>Multiple voices and languages</li>
+      <li>Emotional synthesis</li>
+      <li>Custom voice adaptation</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="4-multimodal-models">4. Multimodal Models</h3>
+
+<h4 id="text-to-image">Text-to-Image</h4>
+<ul>
+  <li><strong>Stable Diffusion</strong>:
+    <ul>
+      <li>Multiple versions (1.5, 2.1, XL)</li>
+      <li>LoRA support</li>
+      <li>Custom pipeline integration</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="image-to-text">Image-to-Text</h4>
+<ul>
+  <li><strong>BLIP-2</strong></li>
+  <li><strong>GIT-large</strong></li>
+</ul>
+
+<h2 id="deployment-options">Deployment Options</h2>
+
+<h3 id="1-cloud-deployment">1. Cloud Deployment</h3>
+<ul>
+  <li><strong>NVIDIA Cloud Services</strong>:
+    <ul>
+      <li>Managed infrastructure</li>
+      <li>Automatic updates</li>
+      <li>Pay-as-you-go pricing</li>
+    </ul>
+  </li>
+  <li><strong>Major Cloud Providers</strong>:
+    <ul>
+      <li>AWS</li>
+      <li>Google Cloud</li>
+      <li>Azure</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="2-on-premises-deployment">2. On-Premises Deployment</h3>
+<ul>
+  <li><strong>Requirements</strong>:
+    <ul>
+      <li>NVIDIA-Certified Systems</li>
+      <li>NVIDIA AI Enterprise software</li>
+      <li>Container runtime environment</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="3-hybrid-deployment">3. Hybrid Deployment</h3>
+<ul>
+  <li>Flexible architecture</li>
+  <li>Load balancing across environments</li>
+  <li>Disaster recovery options</li>
+</ul>
+
+<h2 id="performance-optimization">Performance Optimization</h2>
+
+<h3 id="1-tensorrt-integration">1. TensorRT Integration</h3>
+<ul>
+  <li>Automatic optimization</li>
+  <li>Reduced inference latency</li>
+  <li>Lower memory footprint</li>
+  <li>Support for multiple precision types:
+    <ul>
+      <li>FP32</li>
+      <li>FP16</li>
+      <li>INT8</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="2-triton-inference-server">2. Triton Inference Server</h3>
+<ul>
+  <li>Dynamic batching</li>
+  <li>Model ensemble support</li>
+  <li>Multiple framework support:
+    <ul>
+      <li>TensorRT</li>
+      <li>ONNX Runtime</li>
+      <li>PyTorch</li>
+      <li>TensorFlow</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="industry-specific-solutions">Industry-Specific Solutions</h2>
+
+<h3 id="1-healthcare">1. Healthcare</h3>
+<ul>
+  <li>Medical imaging analysis</li>
+  <li>Diagnostic assistance</li>
+  <li>Patient data processing</li>
+  <li>Drug discovery acceleration</li>
+</ul>
+
+<h3 id="2-financial-services">2. Financial Services</h3>
+<ul>
+  <li>Fraud detection</li>
+  <li>Risk assessment</li>
+  <li>Trading algorithms</li>
+  <li>Document processing</li>
+</ul>
+
+<h3 id="3-manufacturing">3. Manufacturing</h3>
+<ul>
+  <li>Quality control</li>
+  <li>Predictive maintenance</li>
+  <li>Process optimization</li>
+  <li>Visual inspection</li>
+</ul>
+
+<h3 id="4-retail">4. Retail</h3>
+<ul>
+  <li>Inventory management</li>
+  <li>Customer behavior analysis</li>
+  <li>Recommendation systems</li>
+  <li>Visual search</li>
+</ul>
+
+<h2 id="best-practices-for-implementation">Best Practices for Implementation</h2>
+
+<h3 id="1-model-selection">1. Model Selection</h3>
+<ul>
+  <li>Consider use case requirements</li>
+  <li>Evaluate performance metrics</li>
+  <li>Assess resource requirements</li>
+  <li>Review licensing terms</li>
+</ul>
+
+<h3 id="2-infrastructure-planning">2. Infrastructure Planning</h3>
+<ul>
+  <li>GPU selection and sizing</li>
+  <li>Network architecture</li>
+  <li>Storage requirements</li>
+  <li>Scaling strategy</li>
+</ul>
+
+<h3 id="3-monitoring-and-maintenance">3. Monitoring and Maintenance</h3>
+<ul>
+  <li>Performance metrics tracking</li>
+  <li>Resource utilization</li>
+  <li>Model accuracy monitoring</li>
+  <li>Regular updates and patches</li>
+</ul>
+
+<h2 id="security-considerations">Security Considerations</h2>
+
+<h3 id="1-model-security">1. Model Security</h3>
+<ul>
+  <li>Access control</li>
+  <li>Encryption at rest and in transit</li>
+  <li>Secure model updates</li>
+  <li>Audit logging</li>
+</ul>
+
+<h3 id="2-data-privacy">2. Data Privacy</h3>
+<ul>
+  <li>GDPR compliance</li>
+  <li>Data encryption</li>
+  <li>Access controls</li>
+  <li>Privacy-preserving inference</li>
+</ul>
+
+<h3 id="3-infrastructure-security">3. Infrastructure Security</h3>
+<ul>
+  <li>Network security</li>
+  <li>Container security</li>
+  <li>Authentication and authorization</li>
+  <li>Vulnerability management</li>
+</ul>
+
+<h2 id="cost-optimization">Cost Optimization</h2>
+
+<h3 id="1-resource-planning">1. Resource Planning</h3>
+<ul>
+  <li>Right-sizing infrastructure</li>
+  <li>Batch processing optimization</li>
+  <li>Auto-scaling configuration</li>
+  <li>Storage optimization</li>
+</ul>
+
+<h3 id="2-deployment-strategies">2. Deployment Strategies</h3>
+<ul>
+  <li>Multi-tenant architecture</li>
+  <li>Load balancing</li>
+  <li>Caching mechanisms</li>
+  <li>Resource scheduling</li>
+</ul>
+
+<h2 id="future-developments">Future Developments</h2>
+
+<p>NVIDIA continues to expand its NIM offerings with:</p>
+
+<ol>
+  <li><strong>New Model Architectures</strong>
+    <ul>
+      <li>Mixture of Experts (MoE) models</li>
+      <li>Efficient attention mechanisms</li>
+      <li>Specialized domain models</li>
+    </ul>
+  </li>
+  <li><strong>Enhanced Optimization</strong>
+    <ul>
+      <li>Improved quantization techniques</li>
+      <li>Advanced pruning methods</li>
+      <li>Better resource utilization</li>
+    </ul>
+  </li>
+  <li><strong>Extended Platform Support</strong>
+    <ul>
+      <li>New hardware architectures</li>
+      <li>Additional cloud providers</li>
+      <li>Enhanced deployment options</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>NVIDIA Inference Microservices represent a comprehensive solution for deploying AI models in production environments. With its extensive model catalog, optimization tools, and deployment options, NIM provides organizations with the flexibility and scalability needed for modern AI applications. As the field continues to evolve, NVIDIA’s commitment to expanding and improving its offerings ensures that organizations can stay at the forefront of AI technology while maintaining efficient and cost-effective operations.</p>
+
+<p>For more information and access to the latest models, visit the <a href="https://build.nvidia.com/models">NVIDIA Models catalog</a> and explore the documentation for specific implementation details and best practices.</p>]]></content><author><name></name></author><category term="AI" /><category term="LLM" /><summary type="html"><![CDATA[LLM Models hosted on NVIDIA's Infrastructure]]></summary></entry><entry><title type="html">PayPal Phishing with PayPal URL</title><link href="http://localhost:4000/phishing/paypal-phishing/" rel="alternate" type="text/html" title="PayPal Phishing with PayPal URL" /><published>2025-01-18T00:00:00+05:30</published><updated>2025-01-18T00:00:00+05:30</updated><id>http://localhost:4000/phishing/paypal-phishing</id><content type="html" xml:base="http://localhost:4000/phishing/paypal-phishing/"><![CDATA[<h1 id="paypal-phishing-with-paypal-url">PayPal Phishing with Paypal URL</h1>
+
+<p>Fortinet CISO received a mail requesting an invoice amount to be paid, with paypal domain <strong>paypal.com</strong></p>
+
+<p><img src="/assets/images/paypal-phishing.jpeg" alt="" /></p>
+
+<p>This attack involves legitimate paypal URL. According to the CISO, this attack is so clever and sophisticated that gets past PayPal’s
+phishing detection policy.</p>
+
+<h1 id="this-is-not-tagging-of-url-to-text-but-reverse-web-proxy-phishing">This is not tagging of url to text but reverse web proxy phishing</h1>
+
+<p>This attack starts with an authentic email sent from <em>service@paypal.com</em> requsting money for some invoice. Exeperienced internet
+users may be fooled by the email’s appearance and authenticity of email with legitimate PayPal login URL.</p>
+
+<p>The Pay Now button at the bottom is genuine looking redirecting to paypal’s website.</p>
+
+<p>It might be using reverse web Proxy phishing. With the help of tools like
+<a href="https://github.com/kgretzky/evilginx2">Evilginx</a></p>
+
+<p>Tools like <a href="https://github.com/kgretzky/evilginx2">Evilginx</a> uses phishlets to get to legitimate websites and phishing domain lures
+to get the credentials and cookies of the user to redirect to legit website and intercepting the traffic in between.</p>
+
+<h1 id="but-how-did-he-got-to-know"><em>BUT</em> how did he got to know</h1>
+
+<p>When he saw that it was sent to <em>Billingdepartments1[@]gkjyryfjy876.onmicrosoft.com</em> and if he might login using his credentials all 
+his credentials and cookies might be gone.</p>
+
+<p><img src="/assets/images/fig04.jpeg" alt="" /></p>
+
+<h2 id="about-the-email">About the email</h2>
+
+<p>The attackers have registered a MS365 test domain, Which is free for three months, and then a distribution list containing the victim emails <em>.onmicrosoft.com</em></p>
+
+<p>Reference for the post: <a href="https://www.fortinet.com/blog/threat-research/phish-free-paypal-phishing">Phish-free PayPal Phishing</a></p>]]></content><author><name></name></author><category term="Phishing" /><summary type="html"><![CDATA[Attackers using sophisticated attacks to bypass login security]]></summary></entry><entry><title type="html">RISC-V Architecture - From Basics to Building a Simple OS</title><link href="http://localhost:4000/risc-v/RISC-V/" rel="alternate" type="text/html" title="RISC-V Architecture - From Basics to Building a Simple OS" /><published>2025-01-16T00:00:00+05:30</published><updated>2025-01-16T00:00:00+05:30</updated><id>http://localhost:4000/risc-v/RISC-V</id><content type="html" xml:base="http://localhost:4000/risc-v/RISC-V/"><![CDATA[<h1 id="what-is-risc-v-risk-five">What is RISC-V (risk-five)?</h1>
+
+<p>RISC-V is an open-source instruction set architecture (ISA) based on principles of Reduced Instruction Set Computing. Unlike proprietary architectures like ARM or x86, RISC-V is freely available for anyone to use, modify, and implement without licensing fees.</p>
+
+<ul>
+  <li>Supports 32-bit (RV32), 64-bit (RV64), and 128-bit (RV128) addressing</li>
+  <li>Modular design with base ISA and optional extensions</li>
+  <li>Growing ecosystem with hardware implementations and software tools</li>
+</ul>
+
+<h2 id="key-differences-from-arm-cortex">Key Differences from ARM Cortex</h2>
+
+<ol>
+  <li><strong>Licensing Model</strong>
+    <ul>
+      <li>RISC-V: Open-source and royalty-free</li>
+      <li>ARM: Proprietary, requires licensing fees</li>
+    </ul>
+  </li>
+  <li><strong>Instruction Set</strong>
+    <ul>
+      <li>RISC-V: Clean-slate design with minimal, orthogonal instruction set</li>
+      <li>ARM: Evolution-based design with historical compatibility requirements</li>
+    </ul>
+  </li>
+  <li><strong>Extensibility</strong>
+    <ul>
+      <li>RISC-V: Modular design allows custom extensions</li>
+      <li>ARM: Limited customization options</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="building-a-minimal-risc-v-operating-system">Building a Minimal RISC-V Operating System</h2>
+
+<p>Let’s create a simple OS that handles basic file operations and task scheduling. We’ll break this down into steps:</p>
+
+<h3 id="1-boot-sequence">1. Boot Sequence</h3>
+
+<pre><code class="language-assembly">boot.S - Initial boot sequence
+.section .text
+.global start
+start:
+# Set up stack pointer
+li sp, 0x80000000
+# Jump to kernel main
+call kernel_main
+</code></pre>
+
+<h3 id="2-basic-kernel-implementation">2. Basic Kernel Implementation</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// kernel.c</span>
+<span class="cp">#include</span> <span class="cpf">&lt;stdint.h&gt;</span><span class="cp">
+</span><span class="kt">void</span> <span class="nf">kernel_main</span><span class="p">()</span> <span class="p">{</span>
+<span class="c1">// Initialize hardware</span>
+<span class="n">init_uart</span><span class="p">();</span>
+<span class="n">init_interrupts</span><span class="p">();</span>
+<span class="c1">// Initialize task scheduler</span>
+<span class="n">init_scheduler</span><span class="p">();</span>
+<span class="c1">// Start system</span>
+<span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+<span class="n">schedule_next_task</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="3-simple-task-scheduler">3. Simple Task Scheduler</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// scheduler.c</span>
+<span class="cp">#define MAX_TASKS 16
+</span><span class="k">struct</span> <span class="n">Task</span> <span class="p">{</span>
+<span class="kt">uint32_t</span> <span class="n">sp</span><span class="p">;</span>
+<span class="kt">uint32_t</span> <span class="n">priority</span><span class="p">;</span>
+<span class="k">enum</span> <span class="n">TaskState</span> <span class="n">state</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="k">static</span> <span class="k">struct</span> <span class="n">Task</span> <span class="n">tasks</span><span class="p">[</span><span class="n">MAX_TASKS</span><span class="p">];</span>
+<span class="k">static</span> <span class="kt">int</span> <span class="n">current_task</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">init_scheduler</span><span class="p">()</span> <span class="p">{</span>
+<span class="c1">// Initialize task array</span>
+<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">MAX_TASKS</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+<span class="n">tasks</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">state</span> <span class="o">=</span> <span class="n">TASK_EMPTY</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">schedule_next_task</span><span class="p">()</span> <span class="p">{</span>
+<span class="c1">// Simple round-robin scheduling</span>
+<span class="n">current_task</span> <span class="o">=</span> <span class="p">(</span><span class="n">current_task</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">MAX_TASKS</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">tasks</span><span class="p">[</span><span class="n">current_task</span><span class="p">].</span><span class="n">state</span> <span class="o">==</span> <span class="n">TASK_READY</span><span class="p">)</span> <span class="p">{</span>
+<span class="n">context_switch</span><span class="p">(</span><span class="n">tasks</span><span class="p">[</span><span class="n">current_task</span><span class="p">].</span><span class="n">sp</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="4-basic-file-system">4. Basic File System</h3>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// filesystem.c</span>
+<span class="cp">#define MAX_FILES 32
+#define MAX_FILE_SIZE 4096
+</span><span class="k">struct</span> <span class="n">File</span> <span class="p">{</span>
+<span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">32</span><span class="p">];</span>
+<span class="kt">uint8_t</span> <span class="n">data</span><span class="p">[</span><span class="n">MAX_FILE_SIZE</span><span class="p">];</span>
+<span class="kt">uint32_t</span> <span class="n">size</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="k">static</span> <span class="k">struct</span> <span class="n">File</span> <span class="n">files</span><span class="p">[</span><span class="n">MAX_FILES</span><span class="p">];</span>
+<span class="kt">int</span> <span class="nf">create_file</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span>
+<span class="c1">// Find empty slot</span>
+<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">MAX_FILES</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+<span class="k">if</span><span class="p">(</span><span class="n">files</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">size</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+<span class="n">strncpy</span><span class="p">(</span><span class="n">files</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">name</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="mi">31</span><span class="p">);</span>
+<span class="n">files</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">size</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">return</span> <span class="n">i</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">}</span>
+<span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="c1">// No space available</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="hardware-implementation">Hardware Implementation</h2>
+
+<p>RISC-V can be implemented on FPGAs or ASICs. Here’s a basic overview of the pipeline stages:</p>
+
+<ol>
+  <li><strong>Fetch</strong>: Retrieve instruction from memory</li>
+  <li><strong>Decode</strong>: Parse instruction fields</li>
+  <li><strong>Execute</strong>: Perform ALU operations</li>
+  <li><strong>Memory</strong>: Handle memory access</li>
+  <li><strong>Writeback</strong>: Update registers</li>
+</ol>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<p>To run this minimal OS:</p>
+
+<ol>
+  <li>Install RISC-V toolchain:</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>riscv64-linux-gnu
+</code></pre></div></div>
+
+<ol>
+  <li>Compile the code:</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>riscv64-linux-gnu-gcc <span class="nt">-o</span> kernel kernel.c
+</code></pre></div></div>
+<ol>
+  <li>Compile the kernel:</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>riscv64-linux-gnu-gcc <span class="nt">-march</span><span class="o">=</span>rv64gc <span class="nt">-mabi</span><span class="o">=</span>lp64d <span class="nt">-static</span> <span class="nt">-mcmodel</span><span class="o">=</span>medany <span class="nt">-fvisibility</span><span class="o">=</span>hidden <span class="nt">-nostdlib</span> <span class="nt">-nostartfiles</span> <span class="nt">-T</span> linker.ld boot.S kernel.c scheduler.c filesystem.c <span class="nt">-o</span> kernel.elf
+</code></pre></div></div>
+
+<ol>
+  <li>Run the kernel(QEMU):</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>qemu-system-riscv64 <span class="nt">-M</span> virt <span class="nt">-nographic</span> <span class="nt">-bios</span> none <span class="nt">-kernel</span> kernel.elf
+</code></pre></div></div>
+
+<p>This will boot the RISC-V OS and display the UART output.</p>]]></content><author><name></name></author><category term="RISC-V" /><summary type="html"><![CDATA[A deep dive into RISC-V architecture, its implementation, and building a minimal operating system]]></summary></entry><entry><title type="html">Agentic AI - Evolution of intelligent agents</title><link href="http://localhost:4000/ai/ai-agents/" rel="alternate" type="text/html" title="Agentic AI - Evolution of intelligent agents" /><published>2025-01-13T00:00:00+05:30</published><updated>2025-01-13T00:00:00+05:30</updated><id>http://localhost:4000/ai/ai-agents</id><content type="html" xml:base="http://localhost:4000/ai/ai-agents/"><![CDATA[<h1 id="ai-agents">AI Agents</h1>
+
+<h2 id="what-are-ai-agents">What are AI Agents?</h2>
+
+<p>AI agents are software programs or systems that can perceive their environment through sensors, process that information, and take actions to achieve specific goals. These agents range from simple rule-based programs to sophisticated autonomous systems that can learn and adapt to changing circumstances.</p>
+
+<h2 id="key-components-of-ai-agents">Key Components of AI Agents</h2>
+
+<h3 id="1-sensors">1. Sensors</h3>
+<ul>
+  <li>Digital inputs (data feeds, cameras, microphones)</li>
+  <li>Environmental sensors (temperature, pressure, motion)</li>
+  <li>User interactions (clicks, voice commands, text input)</li>
+</ul>
+
+<h3 id="2-processing-unit">2. Processing Unit</h3>
+<ul>
+  <li>Decision-making algorithms</li>
+  <li>Machine learning models</li>
+  <li>Knowledge base and memory systems</li>
+  <li>Planning and problem-solving capabilities</li>
+</ul>
+
+<h3 id="3-actuators">3. Actuators</h3>
+<ul>
+  <li>Digital outputs (screen displays, audio responses)</li>
+  <li>Physical actions (in robots)</li>
+  <li>System commands and API calls</li>
+</ul>
+
+<h2 id="types-of-ai-agents">Types of AI Agents</h2>
+
+<h3 id="simple-reflex-agents">Simple Reflex Agents</h3>
+<p>These agents operate on a basic if-then principle, responding to current percepts without considering history or future consequences. Examples include thermostat systems and basic chatbots.</p>
+
+<h3 id="model-based-agents">Model-Based Agents</h3>
+<p>These agents maintain an internal state of their world, allowing them to track aspects of the environment they can’t currently observe. Self-driving cars use this approach to maintain awareness of objects even when temporarily out of sensor range.</p>
+
+<h3 id="goal-based-agents">Goal-Based Agents</h3>
+<p>These agents work towards specific objectives, planning their actions to achieve desired outcomes. Examples include game-playing AI and automated planning systems.</p>
+
+<h3 id="learning-agents">Learning Agents</h3>
+<p>The most sophisticated type, these agents can improve their performance over time through experience. They include:</p>
+<ul>
+  <li>Reinforcement learning systems</li>
+  <li>Deep learning models</li>
+  <li>Adaptive AI systems</li>
+</ul>
+
+<h2 id="real-world-applications">Real-World Applications</h2>
+
+<h3 id="1-virtual-assistants">1. Virtual Assistants</h3>
+<ul>
+  <li>Siri, Alexa, and Google Assistant</li>
+  <li>Customer service chatbots</li>
+  <li>Email filtering and organization</li>
+</ul>
+
+<h3 id="2-autonomous-systems">2. Autonomous Systems</h3>
+<ul>
+  <li>Self-driving vehicles</li>
+  <li>Robotic process automation</li>
+  <li>Industrial robots</li>
+</ul>
+
+<h3 id="3-intelligent-software">3. Intelligent Software</h3>
+<ul>
+  <li>Recommendation systems</li>
+  <li>Trading algorithms</li>
+  <li>Content moderation systems</li>
+</ul>
+
+<h2 id="challenges-and-considerations">Challenges and Considerations</h2>
+
+<h3 id="1-ethical-concerns">1. Ethical Concerns</h3>
+<ul>
+  <li>Decision-making transparency</li>
+  <li>Bias in training data</li>
+  <li>Privacy considerations</li>
+  <li>Safety and reliability</li>
+</ul>
+
+<h3 id="2-technical-challenges">2. Technical Challenges</h3>
+<ul>
+  <li>Handling uncertainty</li>
+  <li>Dealing with complex environments</li>
+  <li>Real-time processing requirements</li>
+  <li>Resource constraints</li>
+</ul>
+
+<h3 id="3-integration-challenges">3. Integration Challenges</h3>
+<ul>
+  <li>Human-AI collaboration</li>
+  <li>System interoperability</li>
+  <li>Maintenance and updates</li>
+  <li>Training and deployment</li>
+</ul>
+
+<h2 id="future-directions">Future Directions</h2>
+
+<h3 id="1-enhanced-autonomy">1. Enhanced Autonomy</h3>
+<p>As AI technology advances, agents will become increasingly autonomous, capable of handling more complex tasks with less human intervention.</p>
+
+<h3 id="2-multi-agent-systems">2. Multi-Agent Systems</h3>
+<p>Future applications will likely involve multiple AI agents working together, creating more robust and flexible systems.</p>
+
+<h3 id="3-improved-learning-capabilities">3. Improved Learning Capabilities</h3>
+<p>Advances in machine learning will lead to agents that can:</p>
+<ul>
+  <li>Learn from fewer examples</li>
+  <li>Transfer knowledge between tasks</li>
+  <li>Better understand context and nuance</li>
+  <li>Adapt more quickly to new situations</li>
+</ul>
+
+<h2 id="best-practices-for-development">Best Practices for Development</h2>
+
+<h3 id="1-design-principles">1. Design Principles</h3>
+<ul>
+  <li>Clear goal specification</li>
+  <li>Robust error handling</li>
+  <li>Scalable architecture</li>
+  <li>Modular design</li>
+</ul>
+
+<h3 id="2-testing-and-validation">2. Testing and Validation</h3>
+<ul>
+  <li>Comprehensive testing scenarios</li>
+  <li>Performance benchmarking</li>
+  <li>Safety verification</li>
+  <li>User acceptance testing</li>
+</ul>
+
+<h3 id="3-deployment-considerations">3. Deployment Considerations</h3>
+<ul>
+  <li>Monitoring and logging</li>
+  <li>Version control</li>
+  <li>Update mechanisms</li>
+  <li>Fallback systems</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>AI agents represent a fundamental shift in how we interact with technology. From simple automated tasks to complex decision-making systems, these agents are becoming increasingly integral to our daily lives and business operations. As technology continues to evolve, understanding how to effectively design, implement, and manage AI agents will become crucial for organizations and developers alike.</p>
+
+<p>The future of AI agents lies in creating more sophisticated, reliable, and ethically sound systems that can work alongside humans to solve complex problems while maintaining transparency and accountability. As we continue to push the boundaries of what’s possible, the key will be balancing innovation with responsibility, ensuring that AI agents serve their intended purpose while adhering to ethical principles and societal values.</p>]]></content><author><name></name></author><category term="AI" /><summary type="html"><![CDATA[Understanding AI Agents - From Simple Programs to Autonomous Systems]]></summary></entry><entry><title type="html">Buffer Overflows and The Virtual memory layout</title><link href="http://localhost:4000/binary-exploitation/virtual-memory-layout/" rel="alternate" type="text/html" title="Buffer Overflows and The Virtual memory layout" /><published>2025-01-09T00:00:00+05:30</published><updated>2025-01-09T00:00:00+05:30</updated><id>http://localhost:4000/binary-exploitation/virtual-memory-layout</id><content type="html" xml:base="http://localhost:4000/binary-exploitation/virtual-memory-layout/"><![CDATA[<h1 id="what-is-virtual-memory-layout">What is Virtual Memory Layout</h1>
+
+<p>Operating System manages memory for programs using virtual memory, which is referred as the <strong>virtual memory layout</strong>. Programs are given their own virtual address space, isolating them from other programs.</p>
+
+<p>Below is the representation of the Virtual memory layout</p>
+
+<p><img src="/assets/images/Virtual_memory_layout.png" alt="Virtual memory layout" /></p>
+
+<h1 id="parts-of-virtual-memory-address">Parts of Virtual Memory Address</h1>
+
+<p>This layout typically includes:</p>
+
+<ul>
+  <li><strong>Text Segment :</strong> Holds Compiled Program code.</li>
+  <li><strong>Data Segment :</strong> Holds global and static variables.</li>
+  <li>
+    <p><strong>Heap :</strong> For Dynamically allocated memory during runtime</p>
+
+    <p><strong>and</strong></p>
+  </li>
+  <li><strong>The Stack :</strong> For local variables, function calls and control flow</li>
+</ul>
+
+<h1 id="stack-expands-in-opposite-dirction-to-the-data-text-and-heap">Stack expands in opposite dirction to the data, text and Heap</h1>
+
+<h2 id="the-call-stack-and-x86_64-calling-convention">The Call Stack and x86_64 Calling Convention</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function one(){
+    two();
+}
+
+function two(){
+    three();
+}
+
+function three(){
+    console.trace("Call Stack");
+}
+</code></pre></div></div>
+
+<p>function three() execute firsts then –&gt; two() then –&gt; one()</p>
+
+<p><img src="/assets/images/function.png" alt="" /></p>
+
+<p>When a new function is called, we create a new function stack at the top, and pop it off when we are done. All programs are linear like this, you must pop off the top function before revisiting the data contained in the previous functions. If we want to fetch data from other function, it must be <strong>global(.bss or .data)</strong> and not on Stack.</p>
+
+<h2 id="function-stacks">Function Stacks</h2>
+
+<blockquote>
+  <p>Opcode/Operational Code: Single instruction executed by CPU</p>
+  <blockquote>
+    <p>RBP: Base pointer in x86_64<br />
+RSP: Stack pointer in x86_64<br />
+RIP: Instruction register in x86_64</p>
+  </blockquote>
+</blockquote>
+
+<p><img src="/assets/images/functioncall.png" alt="" /></p>
+
+<p>For Setting up the Function Stack, All the parameters are placed in appropriate registers</p>
+
+<h3 id="what-happens-when-we-call-a-function">What happens when we call a function</h3>
+
+<ul>
+  <li>Opcode “call” pushes the return address onto the stack,</li>
+  <li>Opcode “push” pushes RBP onto the stack,</li>
+  <li>Opcode “mov” moves RSP to RBP</li>
+</ul>
+
+<p><strong>This sets up the stack frame for new function</strong></p>
+
+<h3 id="now-what-happens-when-exiting-a-function">Now What happens when exiting a function</h3>
+
+<ul>
+  <li>Setting RAX register to desired value,</li>
+  <li>Opcode “mov” or “leave” sets RSP to RBP,</li>
+  <li>Opcode “pop” pops saved base pointer into RBP</li>
+  <li>Opcode “ret” pops return address into RIP, redirects code execution</li>
+</ul>
+
+<h1 id="buffer-overflow">Buffer Overflow</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;stdio.h&gt;
+
+int main(){
+    long overflow_me = 0;
+    char buf[0x20]; //0x20 = 32 bits
+
+    gets(buf);
+
+    printf("%ld\n", overflow_me);
+
+    return 0;
+}
+
+</code></pre></div></div>
+
+<p>In this program get(buf) is set to take only 32 bits of data, but there is no limitation that the code will only take 32 bits of data and not more than that, if we provide more data (there is no mitigation to that here). So,</p>
+
+<p>Overwriting the return address and base pointer messes up the execution of the program and the code gets corrupted causing <strong>Buffer Overflow</strong></p>
+
+<p>For Example :</p>
+
+<p>In this code:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void win(){
+    printf("You win! If you get here\n");
+}
+
+int main(){
+    char buf[32];
+    
+    gets(buf);
+
+    return 0;
+}
+</code></pre></div></div>
+
+<p>Just like before it can accept 32 bits of data. but if we provide it with more than 32 bits of data it overwrites the base pointer. And now we can go to our intended destination (win offset)</p>
+
+<p><img src="/assets/images/offset.png" alt="" /></p>
+
+<p><strong>If memory can be corrupted through a vulnerability, control flow and data in memory can be manipulated</strong></p>]]></content><author><name></name></author><category term="Binary-Exploitation" /><summary type="html"><![CDATA[To understand Stack-buffer-overflow attack in the virtual memory]]></summary></entry><entry><title type="html">LLM OWASP TOP 10 vulnerabilities</title><link href="http://localhost:4000/ai/llm/LLM-OWASP-top-10/" rel="alternate" type="text/html" title="LLM OWASP TOP 10 vulnerabilities" /><published>2025-01-02T00:00:00+05:30</published><updated>2025-01-02T00:00:00+05:30</updated><id>http://localhost:4000/ai/llm/LLM-OWASP-top-10</id><content type="html" xml:base="http://localhost:4000/ai/llm/LLM-OWASP-top-10/"><![CDATA[<h3 id="llm12025-prompt-injectionjailbreaking">LLM1:2025 Prompt Injection/Jailbreaking</h3>
+
+<p>Prompt injection vulnerability alters the Large-Language-Models(LLMs) behavious or output in an unintended way when user prompts something unusual</p>
+
+<p>Prompt injection does not need text to be human visible/readable as long as the content is parsed by the model.</p>
+
+<p>For Example: Parsing white text on white papers(cannot be parsed by humans but will pe parsed by LLM models)</p>
+
+<p>Retrieval-Augmented-Generation(RAG) and fine tunning aim to make LLM outputs more relevent and accurate.</p>
+
+<p>Jailbreaking is a form of prompt injection where the attacker provides inputs that cause the model to disregard its safety protocols entirely.</p>
+
+<h3 id="llm22025-sensitive-information-disclosure">LLM2:2025 Sensitive Information Disclosure</h3>
+
+<p>LLMs when embedded in application exposes risk to expose Sensitive Data, proprietory algorithms, or confidential details through their output.</p>
+
+<p>Revealing training data can expose models to inversion attacks, where attacks extract sensitive information or reconstruct outputs</p>
+
+<p>The “proof pudding attack” (CVE-2019-20634)</p>
+
+<h3 id="llm32025-supply-chain">LLM3:2025 Supply Chain</h3>
+
+<p>LLMs are susceptible to vulnerabilities of third-party pre trained models and data.</p>
+
+<p>Open-access LLMs and fine tunning methods like “LoRA”(Low-Rank Adaptation) and “PEFT”(Parameter-efficient Fine-tunning) especially on platforms like Hugging Face introduce new Supply-Chain Attacks.</p>
+
+<h3 id="llm42025-data-and-model-poisoning">LLM4:2025 Data and Model Poisoning</h3>
+
+<p>Data and Model Poisoning is somewhat same as LLM3:2025 Supply Chain Vulnerabilities discussed above.</p>
+
+<p>Data and model poisoning occurs when pre-trained, fine-tunning and embedded data is manipulated to introduce vulnerabilities, backdoors, or biases</p>
+
+<h3 id="llm52025-improper-output-handling">LLM5:2025 Improper Output Handling</h3>
+
+<p>Improper Output Handling refers specifically to insufficient validation, sanitization, and handling
+of the outputs generated by large language models before they are passed downstream to other
+components and systems. Since LLM-generated content can be controlled by prompt input, this
+behavior is similar to providing users indirect access to additional functionality.</p>
+
+<h3 id="llm62025-excessive-agency">LLM6:2025 Excessive Agency</h3>
+
+<p>LLM-based system is often granted a degree of agency by its developer - the ability to call functions or interface with other systems via extensions (sometimes referred to as tools, skills or
+plugins by different vendors) to undertake actions in response to a prompt. The decision over which extension to invoke may also be delegated to an LLM ‘agent’ to dynamically determine based
+on input prompt or LLM output. Agent-based systems will typically make repeated calls to an LLM using output from previous invocations to ground and direct subsequent invocations.</p>
+
+<p>Excessive Agency is the vulnerability that enables damaging actions to be performed in response to unexpected, ambiguous or manipulated outputs from an LLM, regardless of what is causing the
+LLM to malfunction. Common triggers include:</p>
+
+<p>• hallucination/confabulation caused by poorly-engineered benign prompts, or just a poorly-performing model;</p>
+
+<p>• direct/indirect prompt injection from a malicious user, an earlier invocation of a malicious/compromised extension, or (in multi-agent/collaborative systems) a malicious/compromised peer agent.</p>
+
+<p>The root cause of Excessive Agency is typically one or more of:<br />
+• excessive functionality;<br />
+• excessive permissions;<br />
+• excessive autonomy.</p>
+
+<p>Excessive Agency can lead to a broad range of impacts across the confidentiality, integrity and availability spectrum, and is dependent on which systems an LLM-based app is able to interact
+with.</p>
+
+<p>Note: Excessive Agency differs from Insecure Output Handling which is concerned with insufficient scrutiny of LLM outputs.</p>
+
+<h3 id="llm72025-system-prompt-leakage">LLM7:2025 System Prompt Leakage</h3>
+
+<p>The system prompt leakage vulnerability in LLMs refers to the risk that the system prompts or instructions used to steer the behavior of the model can also contain sensitive information that was not intended to be discovered.</p>
+
+<h3 id="llm82025-vector-and-embedding-weakness">LLM8:2025 Vector and Embedding Weakness</h3>
+
+<p>In System utilizing Retrieval Augmented Model(RAG) with Large Language Models(LLMs) are more prone to these types of attacks.</p>
+
+<p>Weakness in how vectors and embeddings are generated, stored, or retrieved can be exploited by malicious actions(intentional or unintentional) to inject harful content, manipulate model outputs and access sensitive information.</p>
+
+<h3 id="llm92025-misinformation">LLM9:2025 Misinformation</h3>
+
+<p>Large Language Models(LLMs) produces false or misleading information that appears credible.</p>
+
+<p>The major cause of misinformation is LLMs Hallucination. Hallucination occur when LLMs try to fill empty gaps in between unknown user input without truly understanding the content. And this is the major source of Misinformation.</p>
+
+<p>Retrieval-Augmented-Generation(RAG) can be used to improve the reliability of the model.</p>
+
+<h3 id="llm102025-unbound-consumption">LLM10:2025 Unbound Consumption</h3>
+
+<p>Unbounded Consumption refers to the process where a Large Language Model (LLM) generates  outputs based on input queries or prompts. Inference is a critical function of LLMs, involving the application of learned patterns and knowledge to produce relevant responses or predictions.</p>]]></content><author><name></name></author><category term="AI" /><category term="LLM" /><summary type="html"><![CDATA[LLM1:2025 Prompt Injection/Jailbreaking]]></summary></entry></feed>
